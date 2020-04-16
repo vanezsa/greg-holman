@@ -1,0 +1,366 @@
+@import url('//fonts.googleapis.com/css?family=Barlow+Condensed:400,600,900');
+@import url('//fonts.googleapis.com/css?family=Karla:400,400i,700');
+
+$font-stack-1: 'Karla', sans-serif;
+$font-stack-2: 'Antonio-Bold', sans-serif;
+$red: #EB615B;
+$black: #2A2A2A;
+
+$yellow: #E0B921;
+$gray-100: #F6F4EF;
+$green: #AEB9AD;
+$white: #fff;
+
+$brown: #530000;
+$font-size-display1: 120px;
+$font-size-display2: 100px;
+$font-size-display3: 80px;
+$font-size-display4: 60px;
+$font-size-h1: 40px;
+$font-size-h3: 28px;
+$font-size-h5: 20px;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$text-shadow: #CABDAC;
+
+body {
+    color: $black;
+    font-family: $font-stack-1;
+    font-size: $font-size-h6;
+    line-height: 19px;
+     background-image: url('img.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+
+}
+
+a, a:hover {
+    color: $red;
+    font-weight: $font-weight-bold;
+}
+
+.navbar-nav {padding-top: 50px;}
+
+.the-title {
+    font-size: $font-size-display1;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    text-shadow: 0px 4px $text-shadow;
+    line-height: 120px;
+}
+
+.the-content {
+    color: $black;
+}
+
+
+.contact-button, .contact-butto:hover,
+.contact-butto:active,
+.contact-butto:visited,
+.contact-butto:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white!important;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold!important;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+
+.about-author-heading, .contact-heading, .blog-heading {
+    font-size: $font-size-display4;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+}
+
+.about-author-description, .book-purchase-link-heading {
+    line-height: 32px;
+}
+
+.about-author-quote {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -1.7px;
+    font-style: italic;
+}
+
+.book-purchase-link-heading a {
+    font-size: $font-size-display4;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    color: $red;
+}
+.book-title {
+    font-size: $font-size-display2;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    line-height: 90px;
+}
+
+.book-purchase-links {
+    line-height: 32px;
+    color: $red;
+    font-weight: $font-weight-bold;
+}
+
+.book-reviews-quote {
+    color: $white;
+    font-style: italic;
+    line-height: 36px;
+    font-size: $font-size-h3;
+    letter-spacing: -1.25px;
+}
+
+.comment-heading  {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    font-size: 48px;
+    color: $brown;
+}
+
+.nav-text {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    font-size: 48px;
+    color: $black;
+    text-transform: uppercase;
+}
+.comment-name {
+    color: $red;
+}
+
+.book-reviews-source-name {
+    font-size: $font-size-h3;
+    color: $black;
+}
+
+.book-subscription-heading {
+    font-size: $font-size-display4;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    color: $gray-100;
+    line-height: 55px;
+}
+
+.book-subscription-subheading {
+    font-weight: $font-weight-bold;
+}
+
+.book-subscription-display, book-subscription-display:hover,
+.book-subscription-display:active,
+.book-subscription-display:visited,
+.book-subscription-display:focus {
+    background-color: $red;
+    border-color: $red;
+    border-radius: 0px;
+    color: $white!important;
+    font-family: $font-stack-1;
+    font-weight: $font-weight-semibold!important;
+    font-size: $font-size-h3;
+    height: 64px;
+    line-height: 50px;
+    white-space: pre-wrap;
+}
+
+.book-title-sm {
+    font-size: $font-size-display3;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    line-height: 72px;
+}
+
+.book-date {
+    font-size: $font-size-display4;
+    font-family: $font-stack-2;
+    color: $yellow;
+    font-weight: $font-weight-semibold;
+    line-height: 58px
+}
+
+.about-author-description-text-bold {
+    line-height: 32px;
+    color: $red;
+    font-weight: $font-weight-bold;
+}
+
+%header-shared {
+    background-position: inherit;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1988px;
+}
+
+.home-header-bg {
+    @extend %header-shared;
+    background-image: url(img/home-bg.png);
+}
+
+.page-header-bg {
+    @extend %header-shared;
+    background-image: url(img/about-bg.png);
+}
+
+.blog-header-bg {
+    @extend %header-shared;
+    background-image: url(img/blog-bg.png);
+}
+.blog-single-header-bg {
+    @extend %header-shared;
+    background-image: url(img/blog-single.png);
+}
+
+.blog-date {
+    font-family: $font-stack-2;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: $green;
+    font-weight: $font-weight-semibold;
+
+}
+
+.blog-single-tags {
+    font-weight: $font-weight-bold;
+    color: $red;
+    line-height: 10px;
+    border-bottom:2px solid $red;
+}
+
+.blog-hashtags, .comment-date {
+    font-weight: $font-weight-bold;
+    color: $black;
+    font-size: $font-size-h5;
+    letter-spacing: -0.89px;
+    line-height: 26px;
+}
+
+.blog-post-title {
+    font-weight: $font-weight-semibold;
+    font-family: $font-stack-2;
+    color: $red;
+    text-transform:none;
+}
+
+.blog-post-date {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+}
+
+.blog-img-shadow {
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.5);
+}
+.subscribe-bg {
+    background-image: url(img/subscribe-bg.png);
+    background-position: inherit;
+    height: 458px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.pagination span a {
+    font-size: $font-size-h5;
+    font-family: $font-stack-1;
+}
+.input-group-append .btn {z-index: 0;}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: $black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: $black;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: $black;
+}
+
+.c-bottom {
+    position: absolute;
+    bottom: 0;
+}
+.form-control{
+    height: 64px;
+    border: 1px solid #979797;
+    border-radius: 0rem;
+    color: $black;
+    font-size: $font-size-h3;
+}
+
+footer {
+    color: $gray-100;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-h5;
+    letter-spacing: -0.89px;
+    line-height: 26px;
+    background-color: $black;
+}
+
+.pagination a {
+    font-family: $font-stack-2;
+    font-weight: $font-weight-black;
+    font-size: 48px; 
+}
+.pagination-next {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    font-family: $font-stack-1;
+}
+
+/* -- HAMBURGER -- */
+
+.hamburger {
+    z-index: 9999;
+}
+
+#wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+    width: 280px;
+}
+#sidebar-wrapper {
+    background: #FBF7EA!important;
+}
+.nav.sidebar-nav li a {
+    font-size: $font-size-display4;
+    color: $red;
+    font-family: $font-stack-2;
+    font-weight: $font-weight-semibold;
+    line-height: 57px
+}
+
+@media (max-width: 767px) {
+    .txt-ctr {text-align: center!important;}
+    .pagination a {
+        font-size: 28px; 
+    }
+    #wrapper.toggled #sidebar-wrapper, .sidebar-nav {
+        width: 220px;
+    }
+}
+@media (max-width: 575px) {
+    .the-title {
+        font-size: 95px;
+        line-height: 85px;
+    }
+    .pl-5 {padding-left: 0.5rem!important;}
+    .ml-5 {margin-left: 0.5rem!important;}
+    .pr-5 {padding-right: 1rem!important;
+    }
+}
+
+
